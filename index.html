@@ -11,25 +11,103 @@
   </head>
   <body>
     <div class="page">
+      <!--this is the spots image-->
     <header class="header">
-      <h1>Welcome to Sprint 3 Spots</h1>
+      <img src="./images/spots-images/logo.svg" alt="Logo at the top of the page" class="header__logo"
+      <h1 class="header_title"></h1>
+      <p class="header_description"></p>
     </header>
+    <!--this is the profile group -->
     <main class="content">
-      <section class="profile">
-        <h2>About This Project</h2>
-        <p>
+      <section class="profile" class="page__section">
+        <!--this image is for the user profile image-->
+        <img src="./images/spots-images/avatar.jpg" alt="Avatar picture" class="profile__avarter">
+        <!--this 'div' contents the profile name, description and edit button-->
+        <div class="profile__column">
+          <h1 class="profile__name">Bessie Colemon</h1>
+          <p class="profile__description">Civi Aviator</p>
+          <button type="button" class="profile__edi-button"><img src="./images/spots-images/pencil.svg" alt="pencil icon" class="profile__edit-btn">Edit Profile </button>
+        </div>
+        <!--this is the new post button element
+            this element new a hover: effect and it turns grey.
+            --See the figma for exactly the right color.
+            -->
+        <button type="button" class="profile__add-button">
+          <img src="./images/spots-images/plus.svg" alt="plus icon" class="">New Post </button>
+      </section>
+      <!--this section needs to have rounded edges
+      added bottom border with 40% opacity-->
+      <section class="cards page__section" >
+        <h2 class="card_title">About This Project</h2>
+        <p class="card_content">
+         <ul class="card_list">
+          <li class="card_list-item">
+            <img src="images\spots-images\1-photo-by-moritz-feldmann-from-pexels.jpg"
+            alt="Val Thorens image"
+             class="card__image">
+            <div class="card__content">
+              <h2 class="card__title">Val Thorens</h2>
+              <button type="button" class="card__like-button"></button>
+            </div>
+          <li class="cards_list-item">
+            <img src="images\spots-images\2-photo-by-ceiline-from-pexels.jpg"
+            alt="Val Thorens image"
+             class="card__image">
+            <div class="card__content">
+              <h2 class="card__title">Restaurant terrace</h2>
+              <button type="button" class="card__like-button"></button>
+            </div>
+            <li class="card_list-item">
+            <img src="images\spots-images\3-photo-by-tubanur-dogan-from-pexels.jpg"
+            alt="Val Thorens image"
+             class="card__image">
+            <div class="card__content">
+              <h2 class="card__title">An outdoor cafe</h2>
+              <button type="button" class="card__like-button"></button>
+            </div>
+            <li class="card_list-item">
+            <img src="images\spots-images\4-photo-by-maurice-laschet-from-pexels.jpg"
+            alt="Val Thorens image"
+             class="card__image">
+            <div class="card__content">
+              <h2 class="card__title">A very long bridge, over the forest...
+</h2>
+              <button type="button" class="card__like-button"></button>
+            </div>
+            <li class="card_list-item">
+            <img src="images\spots-images\5-photo-by-van-anh-nguyen-from-pexels.jpg"
+            alt="Val Thorens image"
+             class="card__image">
+            <div class="card__content">
+              <h2 class="card__title">Tunnel with morning light</h2>
+              <button type="button" class="card__like-button"></button>
+            </div>
+            <li class="card_list-item">
+            <img src="images\spots-images\6-photo-by-moritz-feldmann-from-pexels.jpg"
+            alt="Val Thorens image"
+             class="card__image">
+            <div class="card__content">
+              <h2 class="card__title">Mountain house</h2>
+              <button type="button" class="card__like-button"></button>
+         </ul>
+        </p>
+      </section>
+      <section class="cards">
+        <h2 class="card_title">About This Project</h2>
+        <p class="card_content">
           This is the main page for the Sprint 3 Spots project. Explore the
           features and learn more about our work!
         </p>
       </section>
       <section class="cards">
-        <h2>About This Project</h2>
-        <p>
+        <h2 class="card_title">About This Project</h2>
+        <p class="card_content">
           This is the main page for the Sprint 3 Spots project. Explore the
           features and learn more about our work!
         </p>
       </section>
     </main>
+    </div>
     <footer class="footer">
       <p>&copy; 2025 Sprint 3 Spots. All rights reserved.</p>
     </footer>

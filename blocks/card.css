@@ -1,0 +1,30 @@
+.card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 413px;
+}
+.card__title {
+  padding: 0 0 32px;
+  margin: 0;
+}
+.card__list-item {
+  display: flex;
+  gap: 10px;
+}
+
+.card__image {
+  width: 413px;
+  height: 445px;
+  object-fit: cover;
+  display: block;
+}
+.card__like-button {
+  background-image: url(../images/spots-images/heart.svg);
+  width: 20px;
+  height: 23px;
+  border: none;
+  background-color: transparent;
+  opacity: 40%;
+}
