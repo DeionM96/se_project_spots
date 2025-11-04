@@ -1,25 +1,25 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is a fun site!! Where users can add, change, and like posts such as images, profiles and more.">
-    <meta name="author" content="Deion Mitchell" keyword="Image, Sharing, HTML, CSS, Spots"
-    <title>Spots</title>
+    <meta name="author" content="Deion Mitchell" keyword="Image, Sharing, HTML, CSS, Spots">
+    <title></title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   </head>
-  <body>
+  <body class="body">
     <div class="page">
       <!--this is the spots image-->
     <header class="header">
-      <img src="./images/spots-images/logo.svg" alt="Logo at the top of the page" class="header__logo"
-      <h1 class="header_title"></h1>
-      <p class="header_description"></p>
+      <img src="./images/spots-images/logo.svg"
+      alt="Logo at the top of the page"
+      class="header__logo">
     </header>
     <!--this is the profile group -->
     <main class="content">
-      <section class="profile" class="page__section">
+      <section class="profile pages__section">
         <!--this image is for the user profile image-->
         <img src="./images/spots-images/avatar.jpg" alt="Avatar picture" class="profile__avarter">
         <!--this 'div' contents the profile name, description and edit button-->
@@ -29,88 +29,109 @@
           <button type="button" class="profile__edi-button"><img src="./images/spots-images/pencil.svg" alt="pencil icon" class="profile__edit-btn">Edit Profile </button>
         </div>
         <!--this is the new post button element
-            this element new a hover: effect and it turns grey.
+            this element needs a hover: effect and it turns grey.
             --See the figma for exactly the right color.
             -->
         <button type="button" class="profile__add-button">
-          <img src="./images/spots-images/plus.svg" alt="plus icon" class="">New Post </button>
+        <!--this is the plus sign image element-->
+          <img src="./images/spots-images/plus.svg"
+          alt="plus icon"
+          class="profile__plus-icon">New post
+        </button>
       </section>
       <!--this section needs to have rounded edges
       added bottom border with 40% opacity-->
-      <section class="cards page__section" >
-        <h2 class="card_title">About This Project</h2>
-        <p class="card_content">
-         <ul class="card_list">
+      <section class="cards pages__section" >
+        <!--this is the unordered list element-->
+         <ul class="cards_list">
+          <!--this is each card element (i.e. indivdiual card elements)-->
           <li class="card_list-item">
+            <!--this is image 1 Val throne-->
             <img src="images\spots-images\1-photo-by-moritz-feldmann-from-pexels.jpg"
             alt="Val Thorens image"
              class="card__image">
+             <!--this is the div group's element with button-->
             <div class="card__content">
               <h2 class="card__title">Val Thorens</h2>
-              <button type="button" class="card__like-button"></button>
+                <!--this is the 1st heart icon-->
+              <button type="button" class="card__like-button">
+              </button>
             </div>
-          <li class="cards_list-item">
+            <!--this is each card element (i.e. indivdiual card elements)-->
+          <li class="card_list-item">
+              <!--this is image 2 Restaurant terrace-->
             <img src="images\spots-images\2-photo-by-ceiline-from-pexels.jpg"
-            alt="Val Thorens image"
+            alt="Restaurant terrace image"
              class="card__image">
+             <!--this is the div group's element with button-->
             <div class="card__content">
               <h2 class="card__title">Restaurant terrace</h2>
-              <button type="button" class="card__like-button"></button>
+                <!--this is the 2nd heart icon-->
+              <button type="button" class="card__like-button">
+              </button>
             </div>
+            <!--this is each card element (i.e. indivdiual card elements)-->
             <li class="card_list-item">
+             <!--this is image 3 An outdoor cafe-->
             <img src="images\spots-images\3-photo-by-tubanur-dogan-from-pexels.jpg"
-            alt="Val Thorens image"
+            alt="An outdoor cafe image"
              class="card__image">
+             <!--this is the div group's element with button-->
             <div class="card__content">
               <h2 class="card__title">An outdoor cafe</h2>
-              <button type="button" class="card__like-button"></button>
+                <!--this is the 3rd heart icon-->
+              <button type="button" class="card__like-button">
+              </button>
             </div>
+            <!--this is each card element (i.e. indivdiual card elements)-->
             <li class="card_list-item">
+               <!--this is image 4 A very long bridge, over the forest...-->
             <img src="images\spots-images\4-photo-by-maurice-laschet-from-pexels.jpg"
-            alt="Val Thorens image"
+            alt="A very long bridge, over the forest... image"
              class="card__image">
+             <!--this is the div group's element with button-->
             <div class="card__content">
-              <h2 class="card__title">A very long bridge, over the forest...
-</h2>
-              <button type="button" class="card__like-button"></button>
+              <h2 class="card__title">A very long bridge, over the forest...</h2>
+                <!--this is the 4th heart icon-->
+              <button type="button" class="card__like-button">
+              </button>
             </div>
+            <!--this is each card element (i.e. indivdiual card elements)-->
             <li class="card_list-item">
+               <!--this is image 5 Tunnel with morning light-->
             <img src="images\spots-images\5-photo-by-van-anh-nguyen-from-pexels.jpg"
-            alt="Val Thorens image"
+            alt="Tunnel with morning light image"
              class="card__image">
+             <!--this is the div group's element with button-->
             <div class="card__content">
+              <!--this is the div group's element with button-->
               <h2 class="card__title">Tunnel with morning light</h2>
-              <button type="button" class="card__like-button"></button>
+                <!--this is the 5th heart icon-->
+              <button type="button" class="card__like-button">
+              </button>
             </div>
+            <!--this is each card element (i.e. indivdiual card elements)-->
             <li class="card_list-item">
+               <!--this is image 6 Mountain house-->
             <img src="images\spots-images\6-photo-by-moritz-feldmann-from-pexels.jpg"
-            alt="Val Thorens image"
+            alt="Mountain house image"
              class="card__image">
+             <!--this is the div group's element with button-->
             <div class="card__content">
               <h2 class="card__title">Mountain house</h2>
-              <button type="button" class="card__like-button"></button>
+                <!--this is the 6th heart icon-->
+              <button type="button" class="card__like-button">
+              </button>
          </ul>
-        </p>
-      </section>
-      <section class="cards">
-        <h2 class="card_title">About This Project</h2>
-        <p class="card_content">
-          This is the main page for the Sprint 3 Spots project. Explore the
-          features and learn more about our work!
-        </p>
-      </section>
-      <section class="cards">
-        <h2 class="card_title">About This Project</h2>
-        <p class="card_content">
-          This is the main page for the Sprint 3 Spots project. Explore the
-          features and learn more about our work!
         </p>
       </section>
     </main>
     </div>
-    <footer class="footer">
-      <p>&copy; 2025 Sprint 3 Spots. All rights reserved.</p>
+    <!-- this is the footer for the page.-->
+    <footer class="footer pages__section">
+      <p class="footer__paragraph"> 2025 &copy; Sprint 3 Spots. All rights rervedse.</p>
     </footer>
+
     </div>
   </body>
 </html>

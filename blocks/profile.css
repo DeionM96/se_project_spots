@@ -1,13 +1,16 @@
 .profile {
   display: flex;
+  max-width: 1280px;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
-  opacity: 40%;
+  justify-content: center;
+  background-color: #fcf5e5;
 }
 .profile__avatar {
   width: 190px;
   height: 190px;
   margin-right: 20px;
+  border-radius: 8px;
 }
 .profile__column {
   display: flex;
@@ -15,8 +18,11 @@
 }
 
 .profile__name {
-  text-wrap-mode: nowrap;
+  text-wrap: nowrap;
   margin: 0 0 12px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
 }
 
 .profile__description {
@@ -25,8 +31,75 @@
 
 .profile__edi-button {
   margin-top: auto;
+  display: flex;
+  margin-top: 111px;
+  padding: 0;
+  border: none;
+  background-color: #fcf5e5;
+  gap: 10px;
+  width: 84px;
+  height: 16px;
+  text-wrap: nowrap;
 }
 
 .profile__add-button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  margin-top: 138px;
+  margin-left: auto;
+  padding: 16px 32px 16px;
+  width: 157px;
+  height: 52px;
+  color: #fcf5e5;
+  border-radius: 8px;
   background-color: #212121;
+  text-wrap: nowrap;
+  gap: 8px;
+}
+.profile__plus-icon {
+  width: 12px;
+  height: 12px;
+  border: 2px;
+}
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .profile__avatar {
+    margin: 0 0 12px;
+    width: 80px;
+    height: 80px;
+  }
+  .profile__name {
+    font-size: 20px;
+    margin: 0 0 6px;
+  }
+  profile__column {
+    margin: 0 0 20px;
+  }
+  .profile__description {
+    margin: 0 0 32px;
+  }
+  .profile__edi-button {
+    background-color: transparent;
+    color: #212121;
+    opacity: 40%;
+  }
+  .profile__add-button {
+    margin: 0;
+    padding: 18px 32px;
+    width: 100%;
+    background-color: #212121;
+    color: #fcf5e5;
+    border-radius: 8px;
+    gap: 8px;
+  }
 }

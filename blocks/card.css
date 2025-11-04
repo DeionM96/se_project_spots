@@ -1,30 +1,50 @@
+.card {
+  max-width: 413px;
+}
 .card__content {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Poppings-medium, Arial, Helvetica, san-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 413px;
 }
-.card__title {
-  padding: 0 0 32px;
-  margin: 0;
-}
 .card__list-item {
-  display: flex;
-  gap: 10px;
-}
-
-.card__image {
   width: 413px;
   height: 445px;
+}
+.card__image {
   object-fit: cover;
   display: block;
+  width: 413px;
+  height: 413px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+.card__title {
+  margin: 0;
+  padding: 10px;
+  width: 190px;
+  height: 24px;
+  text-wrap: nowrap;
+  font-family: Poppings-medium, Arial, Helvetica, san-serif;
 }
 .card__like-button {
   background-image: url(../images/spots-images/heart.svg);
+  background-repeat: no-repeat;
   width: 20px;
   height: 23px;
   border: none;
   background-color: transparent;
   opacity: 40%;
+}
+
+@media screen and (max-width: 627px);
+ {
+  .card__image {
+    height: 288px;
+  }
 }
