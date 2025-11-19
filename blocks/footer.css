@@ -1,11 +1,26 @@
 .footer {
   width: 100%;
   min-width: fit-content;
+  font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
 }
 .footer__paragraph {
+  font-size: 16px;
   display: flex;
-  border-top: 1px rgba(33, 33, 33, 0.4) solid;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px 0;
   justify-content: center;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 627px) {
+  .footer__paragraph {
+    width: 104px;
+    height: 16px;
+    font-family: inherit;
+    padding: 100px 0;
+    opacity: 70%;
+  }
 }

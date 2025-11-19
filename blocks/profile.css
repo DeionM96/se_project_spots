@@ -18,28 +18,43 @@
 }
 
 .profile__name {
-  text-wrap: nowrap;
+  white-space: nowrap;
   margin: 0 0 12px;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ensures ellipsis is shown */
 }
 
 .profile__description {
   margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ensures ellipsis is shown */
 }
 
 .profile__edi-button {
-  margin-top: auto;
   display: flex;
-  margin-top: 111px;
+  margin-top: auto;
   padding: 0;
   border: none;
   background-color: #fcf5e5;
   gap: 10px;
   width: 84px;
   height: 16px;
-  text-wrap: nowrap;
+  white-space: nowrap;
+  opacity: 50%;
+}
+.profile__edi-button:hover {
+  cursor: pointer;
+  opacity: 100%;
 }
 
 .profile__add-button {
@@ -48,7 +63,7 @@
   font-size: 16px;
   font-weight: 500;
   font-family: Poppings-medium, Arial, Helvetica, san-serif;
-  margin-top: 138px;
+  margin-top: auto;
   margin-left: auto;
   padding: 16px 32px 16px;
   width: 157px;
@@ -56,8 +71,13 @@
   color: #fcf5e5;
   border-radius: 8px;
   background-color: #212121;
-  text-wrap: nowrap;
   gap: 8px;
+}
+.profile__add-button:hover {
+  cursor: pointer;
+  color: #fcf5e5;
+  opacity: 80%;
+  transition: background-color 1s ease;
 }
 .profile__plus-icon {
   width: 12px;
@@ -81,19 +101,33 @@
   .profile__name {
     font-size: 20px;
     margin: 0 0 6px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensures ellipsis is shown */
+    max-width: 288px;
   }
   profile__column {
     margin: 0 0 20px;
   }
   .profile__description {
     margin: 0 0 32px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensures ellipsis is shown */
+    max-width: 288px;
   }
   .profile__edi-button {
     background-color: transparent;
     color: #212121;
-    opacity: 40%;
+    margin: 0 0 30px;
   }
   .profile__add-button {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 18px 32px;
     width: 100%;

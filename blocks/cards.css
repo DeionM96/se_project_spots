@@ -1,21 +1,10 @@
 .cards {
-  max-width: 413px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   font-family: Poppings-medium, Arial, Helvetica, san-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 20px;
+  padding: 20px 0 40px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
-  border-radius: 8px;
 }
 .cards__list {
   list-style-type: none;
-  width: 413px;
-  height: 413px;
   padding: 0;
   margin: 0;
   display: grid;
@@ -27,5 +16,11 @@
 @media screen and (max-width: 627px) {
   .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .cards__list {
+    grid-template-columns: repeat(auto-fit);
   }
 }

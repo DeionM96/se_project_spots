@@ -1,8 +1,10 @@
 .card {
   max-width: 413px;
+  display: flex;
+  flex-direction: column;
 }
 .card__content {
-  font-size: 20px;
+  font-size: smaller;
   font-weight: 500;
   font-family: Poppings-medium, Arial, Helvetica, san-serif;
   display: flex;
@@ -12,7 +14,7 @@
   width: 413px;
 }
 .card__list-item {
-  width: 413px;
+  max-width: 413px;
   height: 445px;
 }
 .card__image {
@@ -26,11 +28,16 @@
 }
 .card__title {
   margin: 0;
-  padding: 10px;
-  width: 190px;
+  padding: 0;
+  max-width: 342px;
   height: 24px;
-  text-wrap: nowrap;
+  white-space: nowrap;
   font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* Limits the text to 1 lines */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ensures ellipsis is shown */
 }
 .card__like-button {
   background-image: url(../images/spots-images/heart.svg);
@@ -41,10 +48,45 @@
   background-color: transparent;
   opacity: 40%;
 }
+.card__like-button:hover {
+  cursor: pointer;
+  opacity: 100%;
+  transition: background-color 1s ease;
+}
 
-@media screen and (max-width: 627px);
- {
+@media screen and (max-width: 627px) {
+  .card__content {
+    width: 288px;
+    height: 18px;
+  }
+  .card__list-item {
+    width: 288px;
+    height: 318px;
+  }
   .card__image {
     height: 288px;
+    width: 288px;
+  }
+  .card__title {
+    font-family: Poppings-medium, Arial, Helvetica, san-serif;
+    font-size: 16px;
+    font-weight: 500;
+    width: 186px;
+    height: 17px;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* Limits the text to 1 lines */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Ensures ellipsis is shown */
+  }
+  .card__like-button {
+    width: 20px;
+    height: 18px;
+  }
+  .card__like-button:hover {
+    cursor: pointer;
+    opacity: 100%;
+    transition: background-color 1s ease;
   }
 }
