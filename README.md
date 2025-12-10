@@ -4,8 +4,7 @@
 
 ## description
 
-full description here of my site.
-this site is one of my most recently creations where at the moment all you can do is hover over edit button, heart buttons, and new post button. updates coming soon. more is in route where users of this site can create their own profiles and like pictures and share them to there profiles. as well as add there own photos to this site. an connect with friends and family members. also this site can change to fix any device such as: desktops, laptops, and mobile devices as well.
+This site is one of my most recently creations where at the moment all you can do is hover over edit button, heart buttons, and new post button. updates coming soon. more is in route where users of this site can create their own profiles and like pictures and share them to there profiles. as well as add there own photos to this site. an connect with friends and family members. also this site can change to fix any device such as: desktops, laptops, and mobile devices as well.
 
 ## Tech Stack
 
