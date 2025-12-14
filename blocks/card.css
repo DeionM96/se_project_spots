@@ -2,21 +2,19 @@
   max-width: 413px;
   display: flex;
   flex-direction: column;
+  height: 445px;
 }
 .card__content {
   font-size: smaller;
   font-weight: 500;
-  font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  font-family: "Poppings", Arial, san-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 413px;
 }
-.card__list-item {
-  max-width: 413px;
-  height: 445px;
-}
+
 .card__image {
   object-fit: cover;
   display: block;
@@ -30,7 +28,9 @@
   margin: 0;
   padding: 0;
   max-width: 342px;
-  height: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   white-space: nowrap;
   font-family: Poppings-medium, Arial, Helvetica, san-serif;
   display: -webkit-box;
@@ -47,11 +47,16 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }
 .card__like-button:hover {
   cursor: pointer;
   opacity: 100%;
-  transition: background-color 1s ease;
+  transition: opacity 0.2s ease;
+}
+
+.card__like-button:focus-visible {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
