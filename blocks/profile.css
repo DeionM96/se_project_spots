@@ -39,6 +39,7 @@
   -webkit-line-clamp: 3; /* Limits the text to 3 lines */
   overflow: hidden;
   text-overflow: ellipsis; /* Ensures ellipsis is shown */
+  color: #212121b2;
 }
 
 .profile__edi-button {
