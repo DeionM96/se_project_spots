@@ -18,7 +18,8 @@
 @media screen and (max-width: 627px) {
   .footer__paragraph {
     width: 104px;
-    height: 16px;
+    line-height: 1.2;
+    margin: 8px 0;
     font-family: inherit;
     padding: 100px 0;
     opacity: 70%;

@@ -16,7 +16,7 @@ This site is one of my most recently creations where at the moment all you can d
 
 This webpage is deployed to Github Pages.
 
--Deployment Link:[**Spots**] (https://deionm96.github.io/se_project_spots/)
+-Deployment Link:[**Spots**](https://deionm96.github.io/se_project_spots/)
 
 ### Overview
 

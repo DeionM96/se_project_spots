@@ -1,5 +1,5 @@
 .cards {
-  font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  font-family: "Poppins", Arial, sans-serif;
   padding: 20px 0 40px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
@@ -17,10 +17,5 @@
   .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
     gap: 12px;
-  }
-}
-@media screen and (max-width: 435px) {
-  .cards__list {
-    grid-template-columns: repeat(auto-fit);
   }
 }
