@@ -109,7 +109,7 @@
     text-overflow: ellipsis; /* Ensures ellipsis is shown */
     max-width: 288px;
   }
-  profile__column {
+  .profile__column {
     margin: 0 0 20px;
   }
   .profile__description {
