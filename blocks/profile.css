@@ -19,7 +19,6 @@
 }
 
 .profile__name {
-  white-space: nowrap;
   margin: 0 0 12px;
   font-weight: 500;
   font-size: 32px;
@@ -27,7 +26,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* Limits the text to 3 lines */
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; /* Ensures ellipsis is shown */
 }
