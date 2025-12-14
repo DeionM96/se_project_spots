@@ -54,7 +54,6 @@
   opacity: 100%;
   transition: opacity 0.2s ease;
 }
-
 .card__like-button:focus-visible {
   cursor: pointer;
 }
@@ -73,11 +72,10 @@
     width: 288px;
   }
   .card__title {
-    font-family: Poppings-medium, Arial, Helvetica, san-serif;
+    font-family: 'Poppings', Arial, san-serif;
     font-size: 16px;
     font-weight: 500;
-    width: 186px;
-    height: 17px;
+    max-width: 235px
     white-space: nowrap;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -92,6 +90,6 @@
   .card__like-button:hover {
     cursor: pointer;
     opacity: 100%;
-    transition: background-color 1s ease;
+    transition: opacity 0.2s ease;
   }
 }
