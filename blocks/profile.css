@@ -53,18 +53,21 @@
   height: 16px;
   white-space: nowrap;
   opacity: 50%;
+  cursor: pointer;
 }
 .profile__edi-button:hover {
   cursor: pointer;
   opacity: 100%;
 }
-
+.profile__edi-button:focus-visible {
+  cursor: pointer;
+}
 .profile__add-button {
   display: flex;
   align-items: center;
   font-size: 16px;
   font-weight: 500;
-  font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  font-family: "Poppins", Arial, sans-serif;
   margin-top: auto;
   margin-left: auto;
   padding: 16px 32px 16px;
