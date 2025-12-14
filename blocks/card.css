@@ -72,10 +72,10 @@
     width: 288px;
   }
   .card__title {
-    font-family: 'Poppings', Arial, san-serif;
+    font-family: "Poppings", Arial, san-serif;
     font-size: 16px;
     font-weight: 500;
-    max-width: 235px
+    max-width: 235px;
     white-space: nowrap;
     display: -webkit-box;
     -webkit-box-orient: vertical;
