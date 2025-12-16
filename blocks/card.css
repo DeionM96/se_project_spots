@@ -15,6 +15,7 @@
 }
 
 .card__image {
+  margin-bottom: 12px;
   object-fit: cover;
   display: block;
   width: 413px;
