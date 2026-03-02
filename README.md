@@ -28,6 +28,10 @@ This webpage is deployed to Github Pages.
 
 This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
 
+**video-aid**
+
+- [Link to video on readme.md](https://drive.google.com/file/d/1UD30hX7IL3Dc-vlUy8miagQ6NOPUL6Em/view?usp=drive_link)
+
 **Figma**
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
