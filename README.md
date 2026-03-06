@@ -30,7 +30,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **video-aid**
 
-- [Link to video on readme.md](https://drive.google.com/file/d/1UD30hX7IL3Dc-vlUy8miagQ6NOPUL6Em/view?usp=drive_link)
+- [click here to see a video](https://drive.google.com/file/d/1UD30hX7IL3Dc-vlUy8miagQ6NOPUL6Em/view?usp=drive_link)
 
 **Figma**
 

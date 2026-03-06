@@ -11,14 +11,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 413px;
 }
 
 .card__image {
   margin-bottom: 12px;
   object-fit: cover;
   display: block;
-  width: 413px;
   height: 413px;
   border-radius: 8px;
 }
