@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -161,6 +161,45 @@
       <footer class="footer page__section">
         <p class="footer__paragraph">2025 &copy; Spots</p>
       </footer>
+    </div>
+    <div class="modal modal_is-opened">
+      <!--placeholder text-->
+
+      <div class="modal">
+        <!--placeholder text-->
+        <div class="modal__container">
+          <button type="button" class="modal__close-button">x-icon</button>
+          <!--close button-->
+          <h2 class="modal__title">Edit profile</h2>
+          <!--title-->
+          <form class="modal__form">
+            <!--this is the form-->
+            <label for="profile-name-input" class="modal__label">
+              name
+              <input
+                id="profile-name-input"
+                type="text"
+                class="modal__input"
+                placeholder="Type your name"
+              />
+            </label>
+            <label for="profile-description-input" class="modal__label">
+              description
+              <input
+                id="profile-description-input"
+                type="text"
+                class="modal__input"
+                placeholder="Describe yourself"
+              />
+            </label>
+            <button type="submit" class="modal__submit-button">Save</button>
+            <!--submit button(save button)-->
+          </form>
+          <!--make sure modal__row is a flex container-->
+          <div class="modal__row"></div>
+          <!--other elements-->
+        </div>
+      </div>
     </div>
   </body>
 </html>

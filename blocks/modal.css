@@ -1,0 +1,46 @@
+.modal {
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex; /*always make the parent element a flex container when needed*/
+  justify-content: center; /*horizontally centered*/
+  align-items: center; /*vertically centered*/
+  flex-direction: column; /*puts elements in a column instead of in a row*/
+}
+.modal modal_is-opened {
+  visibility: visible;
+}
+.modal__container {
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.modal__close-button {
+  /*placeholder text*/
+}
+
+.modal__title {
+  /*placeholder text*/
+}
+.modal__form {
+  /*placeholder text*/
+}
+.modal__label {
+  /*placeholder text*/
+}
+.modal__input {
+  /*placeholder text*/
+}
+.modal__submit-button {
+  /*placeholder text*/
+}
+
+/*.modal__row {
+
+}*/
