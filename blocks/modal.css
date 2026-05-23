@@ -1,3 +1,5 @@
+/*add correct fonts styles for everything*/
+/*responsive design*/
 .modal {
   visibility: hidden;
   background-color: #00000080;
@@ -10,6 +12,7 @@
   justify-content: center; /*horizontally centered*/
   align-items: center; /*vertically centered*/
   flex-direction: column; /*puts elements in a column instead of in a row*/
+  padding: 10px;
 }
 .modal modal_is-opened {
   visibility: visible;
@@ -19,28 +22,118 @@
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
+  padding: 32px 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__close-button {
-  /*placeholder text*/
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  margin-right: 0px;
+  margin-left: auto;
+  background-color: transparent;
+  border: #000;
+  opacity: 70%;
+  font-size: 40px;
+  /*add close button icon and make sure it looks right. border should be #000. with a fone-size*/
+}
+
+.modal__close-button:hover {
+  color: #c41313;
+  border-color: transparent;
+  cursor: pointer;
 }
 
 .modal__title {
-  /*placeholder text*/
+  margin: 0px 0px 32px;
+  font-size: 32px;
 }
 .modal__form {
-  /*placeholder text*/
+  display: flex;
+  flex-direction: column;
 }
 .modal__label {
-  /*placeholder text*/
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 32px;
 }
 .modal__input {
-  /*placeholder text*/
+  display: block;
+  padding: 16px 18px;
+  margin: 8px 0 0;
+  width: 100%;
+  border-radius: 8px;
+
+  /*border, padding, border-radious*/
+  /*font-styles can be added here if needed or if not inhereited*/
+}
+.modal__input::placeholder {
+  color: #2121214d;
 }
 .modal__submit-button {
-  /*placeholder text*/
+  max-width: 156px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  margin: 32px 0;
+  padding: 18px 32px;
+  /*remove max-width in the media query*/
 }
+@media screen and (max-width: 627px) {
+  .modal {
+    padding: 12px;
+  }
+  .modal modal_is-opened {
+    visibility: visible;
+  }
+  .modal__container {
+    max-width: 300px;
+    width: 100%;
+  }
 
-/*.modal__row {
+  .modal__close-button {
+    font-size: 22.96px;
+    opacity: 70%;
+    color: #212121;
+    border-color: #000;
+    /*add close button icon and make sure it looks right. border should be #000. with a fone-size*/
+  }
+  .modal__close-button:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .modal__title {
+  }
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    max-width: 330px;
+  }
+  .modal__label {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 260px;
+  }
+  .modal__input {
+    display: block;
+    width: 260px;
 
-}*/
+    /*border, padding, border-radious*/
+    /*font-styles can be added here if needed or if not inhereited*/
+  }
+  .modal__input::placeholder {
+    color: #2121214d;
+  }
+  .modal__submit-button {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    /*remove max-width in the media query*/
+  }
+}
