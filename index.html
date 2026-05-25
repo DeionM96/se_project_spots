@@ -162,10 +162,8 @@
         <p class="footer__paragraph">2025 &copy; Spots</p>
       </footer>
     </div>
-    <div class="modal modal_is-opened">
-      <!--placeholder text-->
-
-      <div class="modal">
+    <!--this is the first modal-->
+    <div class="modal modal_is-opened">  <!--this only shows when the user clicks on the edit profile button.-->
         <!--this is the modal class and modal__container-->
         <div class="modal__container">          <!--this is the close-btn for the modsal.-->
           <button type="button" class="modal__close-button"> <img src="./images/spots-images/close-btn-icon.png" alt="x-icon">
@@ -199,7 +197,39 @@
           </form>
           <!--other elements-->
         </div>
-      </div>
+    </div>
+        <div class="modal">  <!--this only shows when the user clicks on the edit profile button.-->
+        <!--this is the modal class and modal__container-->
+        <div class="modal__container">          <!--this is the close-btn for the modsal.-->
+          <button type="button" class="modal__close-button"> <img src="./images/spots-images/close-btn-icon.png" alt="x-icon">
+          </button>
+          <h2 class="modal__title">New Post</h2>
+          <!--modal__title-->
+          <form class="modal__form">
+            <!--this is the form-->
+            <label for="profile-name-input" class="modal__label">
+              Image link
+              <input
+                id="image-link-input"
+                type="url"
+                class="modal__input"
+                placeholder="paste a link to the picture"
+              />
+            </label>
+            <label for="image-caption-input" class="modal__label">
+              caption
+              <input
+                id="profile-description-input"
+                type="text"
+                class="modal__input"
+                placeholder="type your caption"
+              />
+            <!-- </label> -->
+            <button type="submit" class="modal__submit-button">Save</button>
+            <!--submit button(save button)-->
+          </form>
+          <!--other elements-->
+        </div>
     </div>
   </body>
 </html>

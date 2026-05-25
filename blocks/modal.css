@@ -82,6 +82,10 @@
   padding: 18px 32px;
   /*remove max-width in the media query*/
 }
+.modal__submit-button:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
 @media screen and (max-width: 627px) {
   .modal {
     padding: 12px;
@@ -92,6 +96,7 @@
   .modal__container {
     max-width: 300px;
     width: 100%;
+    padding: 18px 8px;
   }
 
   .modal__close-button {
@@ -102,9 +107,10 @@
     /*add close button icon and make sure it looks right. border should be #000. with a fone-size*/
   }
   .modal__close-button:hover {
-    color: red;
     cursor: pointer;
+    opacity: 60%;
   }
+
   .modal__title {
   }
   .modal__form {
@@ -118,6 +124,7 @@
     flex-direction: column;
     max-width: 300px;
     width: 260px;
+    margin: 18px 0 0;
   }
   .modal__input {
     display: block;
@@ -130,10 +137,13 @@
     color: #2121214d;
   }
   .modal__submit-button {
-    width: 300px;
     display: flex;
     flex-direction: column;
-    max-width: 330px;
+    max-width: none;
     /*remove max-width in the media query*/
+  }
+  .modal__submit-button:hover {
+    cursor: pointer;
+    opacity: 60%;
   }
 }
