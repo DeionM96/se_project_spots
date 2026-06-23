@@ -14,7 +14,7 @@
   flex-direction: column; /*puts elements in a column instead of in a row*/
   padding: 10px;
 }
-.modal modal_is-opened {
+.modal_is-opened {
   visibility: visible;
 }
 .modal__container {
@@ -94,7 +94,7 @@
   .modal {
     padding: 12px;
   }
-  .modal modal_is-opened {
+  .modal_is-opened {
     visibility: visible;
   }
   .modal__container {

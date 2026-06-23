@@ -40,7 +40,7 @@
   color: #212121b2;
 }
 
-.profile__edi-button {
+.profile__edit-button {
   display: flex;
   margin-top: auto;
   padding: 0;
@@ -53,11 +53,11 @@
   opacity: 50%;
   cursor: pointer;
 }
-.profile__edi-button:hover {
+.profile__edit-button:hover {
   cursor: pointer;
   opacity: 100%;
 }
-.profile__edi-button:focus-visible {
+.profile__edit-button:focus-visible {
   cursor: pointer;
 }
 .profile__add-button {
@@ -125,7 +125,7 @@
     text-overflow: ellipsis; /* Ensures ellipsis is shown */
     max-width: 288px;
   }
-  .profile__edi-button {
+  .profile__edit-button {
     background-color: transparent;
     color: #212121;
     margin: 0 0 30px;
