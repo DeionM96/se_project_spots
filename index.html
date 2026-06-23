@@ -47,7 +47,7 @@
             this element needs a hover: effect and it turns grey.
             --See the figma for exactly the right color.
             -->
-          <button type="button" class="profile__add-button">
+          <button type="button" class="profile__add-button" id="new-post-btn">
             <!--this is the plus sign image element-->
             <img
               src="./images/spots-images/plus.svg"
@@ -163,7 +163,7 @@
       </footer>
     </div>
     <!--this is the first modal-->
-    <div class="modal modal_is-opened">  <!--this only shows when the user clicks on the edit profile button.-->
+    <div class="modal" id="edit-profile-modal">  <!--this only shows when the user clicks on the edit profile button.-->
         <!--this is the modal class and modal__container-->
         <div class="modal__container">          <!--this is the close-btn for the modsal.-->
           <button type="button" class="modal__close-button"> <img src="./images/spots-images/close-btn-icon.png" alt="x-icon">
@@ -198,9 +198,9 @@
           <!--other elements-->
         </div>
     </div>
-        <div class="modal">  <!--this only shows when the user clicks on the edit profile button.-->
+        <div class="modal" id="new-post-modal">  <!--this only shows when the user clicks on the new post button.-->
         <!--this is the modal class and modal__container-->
-        <div class="modal__container">          <!--this is the close-btn for the modsal.-->
+        <div class="modal__container">          <!--this is the close-btn for the modal.-->
           <button type="button" class="modal__close-button"> <img src="./images/spots-images/close-btn-icon.png" alt="x-icon">
           </button>
           <h2 class="modal__title">New Post</h2>
@@ -231,5 +231,6 @@
           <!--other elements-->
         </div>
     </div>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
