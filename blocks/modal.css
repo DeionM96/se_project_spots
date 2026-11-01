@@ -2,7 +2,11 @@
 /*responsive design*/
 .modal {
   visibility: hidden;
-  background-color: #00000080;
+  opacity: 0;
+  transition:
+    0.3s ease,
+    0.3s linear;
+  background-color: #00000050;
   position: fixed;
   top: 0;
   right: 0;
@@ -16,6 +20,8 @@
 }
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
+  transition: transform 0.5s ease-in;
 }
 .modal__container {
   max-width: 730px;
@@ -35,23 +41,26 @@
   margin-right: 0px;
   margin-left: auto;
   background-color: transparent;
-  border: #000;
-  opacity: 70%;
+  border: 1px solid #000;
+  opacity: 0.4;
   font-size: 40px;
-  /*add close button icon and make sure it looks right. border should be #000. with a fone-size*/
 }
 
 .modal__close-button:hover {
+  opacity: 1;
   color: #c41313;
   border-color: transparent;
   cursor: pointer;
 }
 
 .modal__title {
-  margin: 0px 0px 32px;
-  font-size: 32px;
+  color: #212121;
+  margin: 0;
+  padding: 22px 12px 12px;
+  font-size: 20px;
   font-weight: 500;
-  font-family: "Poppings", Arial, san-serif;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1;
 }
 .modal__form {
   display: flex;
@@ -62,7 +71,7 @@
   flex-direction: column;
   margin: 0 0 32px;
   font-weight: 500;
-  font-family: "Poppings", Arial, san-serif;
+  font-family: "Poppins", Arial, sans-serif;
 }
 .modal__input {
   display: block;
@@ -70,7 +79,8 @@
   margin: 8px 0 0;
   width: 100%;
   border-radius: 8px;
-
+  font-weight: 500;
+  font-family: "Poppings", Arial, san-serif;
   /*border, padding, border-radious*/
   /*font-styles can be added here if needed or if not inhereited*/
 }
@@ -84,6 +94,7 @@
   border-radius: 8px;
   margin: 32px 0 0;
   padding: 18px 32px;
+  cursor: pointer;
   /*remove max-width in the media query*/
 }
 .modal__submit-button:hover {
@@ -100,16 +111,18 @@
   .modal__container {
     max-width: 300px;
     width: 100%;
-    padding: 18px 8px;
+    padding: 12px;
   }
 
   .modal__close-button {
-    position: inherit;
+    position: absolute;
     font-size: 22.96px;
     opacity: 70%;
     color: #212121;
+    border: none;
     border-color: #000;
-    /*add close button icon and make sure it looks right. border should be #000. with a fone-size*/
+    top: 20px;
+    right: 15px;
   }
   .modal__close-button:hover {
     cursor: pointer;
@@ -119,27 +132,32 @@
   .modal__title {
     font-size: 20px;
     font-weight: 500;
-    font-family: "Poppings", Arial, san-serif;
+    font-family: "Poppins", Arial, sans-serif;
   }
   .modal__form {
     display: flex;
     flex-direction: column;
-    width: 315px;
-    max-width: 330px;
+    width: 100%;
+    box-sizing: border-box;
   }
   .modal__label {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
-    width: 260px;
+    width: 100%;
     margin: 18px 0 0;
+    border: 1px solid rgba(33, 33, 33 0.4);
+    border-radius: 8px;
+    font-size: 20px;
   }
   .modal__input {
     display: block;
-    width: 260px;
-
-    /*border, padding, border-radious*/
-    /*font-styles can be added here if needed or if not inhereited*/
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Poppins", Arial, sans-serif;
+    border: 1px solid rgba(33, 33, 33 0.4);
+    border-radius: 8px;
   }
   .modal__input::placeholder {
     color: #2121214d;
@@ -148,10 +166,5 @@
     display: flex;
     flex-direction: column;
     max-width: none;
-    /*remove max-width in the media query*/
-  }
-  .modal__submit-button:hover {
-    cursor: pointer;
-    opacity: 60%;
   }
 }

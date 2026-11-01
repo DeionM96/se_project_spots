@@ -34,8 +34,13 @@
           <!--this 'div' contents the profile name, description and edit button-->
           <div class="profile__column">
             <h1 class="profile__name">Bessie Colemon</h1>
-            <p class="profile__description">Civi Aviator</p>
-            <button type="button" class="profile__edit-button">
+            <p class="profile__description">Civil Aviator</p>
+            <button
+              type="button"
+              class="profile__edit-button"
+              data-action="open-modal"
+              data-target="#edit-profile-modal"
+            >
               <img
                 src="./images/spots-images/pencil.svg"
                 alt="pencil icon"
@@ -43,11 +48,14 @@
               />Edit Profile
             </button>
           </div>
-          <!--this is the new post button element
-            this element needs a hover: effect and it turns grey.
-            --See the figma for exactly the right color.
-            -->
-          <button type="button" class="profile__add-button" id="new-post-btn">
+
+          <button
+            type="button"
+            class="profile__add-button"
+            id="new-post-btn"
+            data-action="open-modal"
+            data-target="#new-post-modal"
+          >
             <!--this is the plus sign image element-->
             <img
               src="./images/spots-images/plus.svg"
@@ -163,73 +171,87 @@
       </footer>
     </div>
     <!--this is the first modal-->
-    <div class="modal" id="edit-profile-modal">  <!--this only shows when the user clicks on the edit profile button.-->
-        <!--this is the modal class and modal__container-->
-        <div class="modal__container">          <!--this is the close-btn for the modsal.-->
-          <button type="button" class="modal__close-button"> <img src="./images/spots-images/close-btn-icon.png" alt="x-icon">
+    <div class="modal" id="edit-profile-modal">
+      <!--this only shows when the user clicks on the edit profile button.-->
+      <!--this is the modal class and modal__container-->
+      <div class="modal__container">
+        <!--this is the close-btn for the modal.-->
+        <button
+          type="button"
+          class="modal__close-button"
+          data-action="close-modal"
+        >
+          <img src="./images/spots-images/close-btn-icon.png" alt="x-icon" />
+        </button>
 
-          </button>
-
-          <h2 class="modal__title">Edit profile</h2>
-          <!--modal__title-->
-          <form class="modal__form">
-            <!--this is the form-->
-            <label for="profile-name-input" class="modal__label">
-              name
-              <input
-                id="profile-name-input"
-                type="text"
-                class="modal__input"
-                placeholder="Type your name"
-              />
-            </label>
-            <label for="profile-description-input" class="modal__label">
-              description
-              <input
-                id="profile-description-input"
-                type="text"
-                class="modal__input"
-                placeholder="Describe yourself"
-              />
-            <!-- </label> -->
-            <button type="submit" class="modal__submit-button">Save</button>
-            <!--submit button(save button)-->
-          </form>
-          <!--other elements-->
-        </div>
+        <h2 class="modal__title">Edit profile</h2>
+        <!--modal__title-->
+        <form class="modal__form">
+          <!--this is the form-->
+          <label for="profile-name-input" class="modal__label">
+            name
+            <input
+              id="profile-name-input"
+              type="text"
+              class="modal__input"
+              placeholder="Type your name"
+            />
+          </label>
+          <label for="profile-description-input" class="modal__label">
+            description
+            <input
+              id="profile-description-input"
+              type="text"
+              class="modal__input"
+              placeholder="Describe yourself"
+            />
+          </label>
+          <button type="submit" class="modal__submit-button">Save</button>
+          <!--submit button(save button)-->
+        </form>
+      </div>
     </div>
-        <div class="modal" id="new-post-modal">  <!--this only shows when the user clicks on the new post button.-->
-        <!--this is the modal class and modal__container-->
-        <div class="modal__container">          <!--this is the close-btn for the modal.-->
-          <button type="button" class="modal__close-button"> <img src="./images/spots-images/close-btn-icon.png" alt="x-icon">
-          </button>
-          <h2 class="modal__title">New Post</h2>
-          <!--modal__title-->
-          <form class="modal__form">
-            <!--this is the form-->
-            <label for="profile-name-input" class="modal__label">
-              Image link
-              <input
-                id="image-link-input"
-                type="url"
-                class="modal__input"
-                placeholder="paste a link to the picture"
-              />
-            </label>
-            <label for="image-caption-input" class="modal__label">
-              caption
-              <input
-                id="profile-description-input"
-                type="text"
-                class="modal__input"
-                placeholder="type your caption"
-              />
-            <!-- </label> -->
-            <button type="submit" class="modal__submit-button">Save</button>
-            <!--submit button(save button)-->
-          </form>
-          <!--other elements-->
-        </div>
+    <!--this is the modal for NewPost elements-->
+    <div class="modal" id="new-post-modal">
+      <!--this only shows when the user clicks on the new post button.-->
+      <!--this is the modal class and modal__container-->
+      <div class="modal__container">
+        <!--this is the close-btn for the modal.-->
+        <button
+          type="button"
+          class="modal__close-button"
+          data-action="close-modal"
+        >
+          <img src="./images/spots-images/close-btn-icon.png" alt="x-icon" />
+        </button>
+        <h2 class="modal__title">New Post</h2>
+        <!--modal__title-->
+        <form class="modal__form" id="new-post-form">
+          <!--this is the form-->
+          <!--(to-do) change the id's to make it easier to like (newpostfield or something simplar to this idea. We can't have duplicates of the same id.-->
+          <!--change the id on line 236 from profile-name-input to newPost related name.-->
+          <label for="image-url-input" class="modal__label">
+            Image link
+            <input
+              id="post-url-input"
+              type="url"
+              class="modal__input"
+              placeholder="paste a link to the picture"
+            />
+          </label>
+          <label for="image-caption-input" class="modal__label">
+            caption
+            <input
+              id="post-caption-input"
+              type="text"
+              class="modal__input"
+              placeholder="type your caption"
+            />
+          </label>
+          <button type="submit" class="modal__submit-button">Save</button>
+          <!--submit button(save button)-->
+        </form>
+      </div>
     </div>
     <script src="./scripts/index.js"></script>
   </body>

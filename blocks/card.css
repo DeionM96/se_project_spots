@@ -6,7 +6,7 @@
 .card__content {
   font-size: 16px;
   font-weight: 500;
-  font-family: "Poppings", Arial, san-serif;
+  font-family: "Poppins", Arial, san-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -18,6 +18,7 @@
   object-fit: cover;
   display: block;
   height: 413px;
+  width: 100%;
   border-radius: 8px;
 }
 .card__title {
@@ -28,7 +29,7 @@
   font-weight: 500;
   line-height: 1.2;
   white-space: nowrap;
-  font-family: Poppings-medium, Arial, Helvetica, san-serif;
+  font-family: "Poppins", Arial, san-serif;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1; /* Limits the text to 1 lines */
@@ -68,7 +69,7 @@
     width: 288px;
   }
   .card__title {
-    font-family: "Poppings", Arial, san-serif;
+    font-family: "Poppins", Arial, san-serif;
     font-size: 16px;
     font-weight: 500;
     max-width: 235px;
@@ -82,10 +83,5 @@
   .card__like-button {
     width: 20px;
     height: 18px;
-  }
-  .card__like-button:hover {
-    cursor: pointer;
-    opacity: 100%;
-    transition: opacity 0.2s ease;
   }
 }
