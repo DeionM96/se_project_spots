@@ -27,6 +27,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+  line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis; /* Ensures ellipsis is shown */
 }
@@ -36,6 +37,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+  line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis; /* Ensures ellipsis is shown */
   color: #212121b2;
@@ -110,6 +112,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis; /* Ensures ellipsis is shown */
     max-width: 288px;
@@ -122,6 +125,7 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+    line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis; /* Ensures ellipsis is shown */
     max-width: 288px;

@@ -94,29 +94,16 @@ function handleProfileFormSubmit(evt) {
 function handleNewPostFormSubmit(evt) {
   evt.preventDefault();
 
-  // 1. Grab values entered into the input fields
+  // Grab values entered into the input fields
   const captionValue = newPostCaptionInput.value;
   const urlValue = newPostUrlInput.value;
 
   console.log(captionValue, urlValue);
-  /*  //(work in progress idea)2. Create the HTML string template for the new card element
-  const cardHTML = `
-    <li class="card">
-      <img src="${urlValue}" alt="${captionValue} image" class="card__image" />
-      <div class="card__content">
-        <h2 class="card__title">${captionValue}</h2>
-        <button type="button" class="card__like-button"></button>
-      </div>
-    </li>
-  `;
 
-  // 3. Update the DOM by prepending the card to the beginning of the gallery list
-  cardsList.insertAdjacentHTML("afterbegin", cardHTML);
-*/
-  // 4. Reset the form values so it's clean for the next use
+  // Reset the form values so it's clean for the next use
   newPostForm.reset();
 
-  // 5. Close the new post modal
+  // Close the new post modal
   newPostModal.classList.remove("modal_is-opened");
 }
 //this line below: this is the submittion listener and calls the handleprofileformsubmit.
