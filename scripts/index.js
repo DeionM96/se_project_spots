@@ -10,9 +10,9 @@ const editProfileForm = editProfileModal.querySelector(".modal__form");
 
 // New Post Modal Elements
 const newPostModal = document.querySelector("#new-post-modal");
-const newPostCaptionInput = document.querySelector("#post-caption-input"); //either change the name of this element or add it either way I want to implement this in my code. For All of NewPOST related points.
-const newPostUrlInput = document.querySelector("#post-url-input");
-const newPostForm = document.querySelector("#new-post-form");
+const newPostCaptionInput = newPostModal.querySelector("#post-caption-input"); //either change the name of this element or add it either way I want to implement this in my code. For All of NewPOST related points.
+const newPostUrlInput = newPostModal.querySelector("#post-url-input");
+const newPostForm = newPostModal.querySelector("#new-post-form");
 
 // Profile Display Elements (Target text content in the DOM)
 const profileNameElement = document.querySelector(".profile__name");
@@ -24,6 +24,8 @@ const editInputNameElement = document.querySelector("#profile-name-input");
 const editInputDescElement = document.querySelector(
   "#profile-description-input",
 );
+//this is for the save button on the form
+const newPostSaveBtn = newPostModal.querySelector("#new-post-save-btn");
 //const cardList = document.queryselector(".cards__list"); //Cards Gallery Elements (Where new cards get added) idea
 
 // this is the my reusable open/closing elements modals.
@@ -96,6 +98,7 @@ function handleNewPostFormSubmit(evt) {
   const captionValue = newPostCaptionInput.value;
   const urlValue = newPostUrlInput.value;
 
+  console.log(captionValue, urlValue);
   /*  //(work in progress idea)2. Create the HTML string template for the new card element
   const cardHTML = `
     <li class="card">
@@ -116,7 +119,6 @@ function handleNewPostFormSubmit(evt) {
   // 5. Close the new post modal
   newPostModal.classList.remove("modal_is-opened");
 }
-
 //this line below: this is the submittion listener and calls the handleprofileformsubmit.
 editProfileForm.addEventListener("submit", handleProfileFormSubmit);
 newPostForm.addEventListener("submit", handleNewPostFormSubmit);

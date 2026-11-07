@@ -230,7 +230,7 @@
           <!--this is the form-->
           <!--(to-do) change the id's to make it easier to like (newpostfield or something simplar to this idea. We can't have duplicates of the same id.-->
           <!--change the id on line 236 from profile-name-input to newPost related name.-->
-          <label for="image-url-input" class="modal__label">
+          <label for="post-url-input" class="modal__label">
             Image link
             <input
               id="post-url-input"
@@ -239,7 +239,7 @@
               placeholder="paste a link to the picture"
             />
           </label>
-          <label for="image-caption-input" class="modal__label">
+          <label for="post-caption-input" class="modal__label">
             caption
             <input
               id="post-caption-input"
@@ -248,7 +248,13 @@
               placeholder="type your caption"
             />
           </label>
-          <button type="submit" class="modal__submit-button">Save</button>
+          <button
+            type="submit"
+            class="modal__submit-button"
+            id="new-post-save-btn"
+          >
+            Save
+          </button>
           <!--submit button(save button)-->
         </form>
       </div>

@@ -41,9 +41,10 @@
   margin-right: 0px;
   margin-left: auto;
   background-color: transparent;
-  border: 1px solid #000;
+  border: none;
   opacity: 0.4;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .modal__close-button:hover {
@@ -80,9 +81,9 @@
   width: 100%;
   border-radius: 8px;
   font-weight: 500;
-  font-family: "Poppings", Arial, san-serif;
-  /*border, padding, border-radious*/
-  /*font-styles can be added here if needed or if not inhereited*/
+  font-family: "Poppins", Arial, sans-serif;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.4);
 }
 .modal__input::placeholder {
   color: #2121214d;
@@ -95,7 +96,7 @@
   margin: 32px 0 0;
   padding: 18px 32px;
   cursor: pointer;
-  /*remove max-width in the media query*/
+  border: none;
 }
 .modal__submit-button:hover {
   cursor: pointer;
